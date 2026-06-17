@@ -1,0 +1,15 @@
+name: Gitnub Action test No 1.
+
+# main branch에 push되면 실행하겠다
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  My-Deploy-Job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World 출력
+        run: echo "Hello World"
