@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: GitHub Action 내장 변수 사용
+        run: | 
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+
       - name: Hello World 출력
         run: echo "Hello World"
 
